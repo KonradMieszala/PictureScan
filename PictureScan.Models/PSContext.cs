@@ -4,10 +4,10 @@ namespace PictureScan.Models
 {
     public class PSContext : DbContext
     {
-        private const string MigrationsAssembly = "DBMigrator";
+        private const string MigrationsAssembly = "PictureScan.DBMigrator";
         private readonly string _connectionString;
 
-        public DbSet<Picture> Klients { get; set; }
+        public DbSet<Picture> Picture { get; set; }
         public PSContext(string connectionString, int? timeout = null) : base()
         {
             _connectionString = connectionString;

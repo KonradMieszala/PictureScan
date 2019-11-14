@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictureScan.Producer", "PictureScan.Producer.csproj", "{5370FCD8-89A0-44E8-9CDC-DDCCF39E9907}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictureScan.Producer", "PictureScan.Producer\PictureScan.Producer.csproj", "{5370FCD8-89A0-44E8-9CDC-DDCCF39E9907}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureScan.Service", "..\PictureScan.Service\PictureScan.Service.csproj", "{31452342-F3DE-4EE5-8DA4-B770B597F897}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictureScan.Service", "PictureScan.Service\PictureScan.Service.csproj", "{31452342-F3DE-4EE5-8DA4-B770B597F897}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureScan.Models", "..\PictureScan.Models\PictureScan.Models.csproj", "{4F6F7DF0-146A-4519-A651-295863ED2B3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictureScan.Models", "PictureScan.Models\PictureScan.Models.csproj", "{4F6F7DF0-146A-4519-A651-295863ED2B3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureScan.DBMigrator", "..\PictureScan.DBMigrator\PictureScan.DBMigrator.csproj", "{490CC31C-49EB-44BA-886F-56CC286F2A94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictureScan.DBMigrator", "PictureScan.DBMigrator\PictureScan.DBMigrator.csproj", "{490CC31C-49EB-44BA-886F-56CC286F2A94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

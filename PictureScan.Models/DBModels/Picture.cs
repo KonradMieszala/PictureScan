@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PictureScan.Models.DBModels;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -10,8 +12,9 @@ namespace PictureScan.Models
         public int Id { get; set; }
         [Column(TypeName = "varchar(26)")]
         public string FileName { get; set; }
-        [Column(TypeName = "varchar(max)")]
-        public string FileDirectory { get; set; }
+        [ForeignKey("Directory")]
+        public int DirectoryId { get; set; }
+        public virtual Directory Directory { get; set; }
         public DateTime CreationFileDate { get; set; }
         public long LeftTop { get; set; }
         public long LeftBottom { get; set; }
