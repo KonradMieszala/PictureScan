@@ -1,8 +1,8 @@
 # PictureScan
 
-##G³ówne za³o¿enie: znaleŸæ duble zdjêæ.
+## G³ówne za³o¿enie: znaleŸæ duble zdjêæ.
 
-###Do uruchomienia bêdzie potrzebne:
+### Do uruchomienia bêdzie potrzebne:
 **- VS 2019+ - ze wzglêdu na .Net Core 3.0
 - MS SQL Server
 - EventStore**
