@@ -3,9 +3,9 @@
 ## G³ówne za³o¿enie: znaleŸæ duble zdjêæ.
 
 ### Do uruchomienia bêdzie potrzebne:
-**- VS 2019+ - ze wzglêdu na .Net Core 3.0
+- VS 2019+ - ze wzglêdu na .Net Core 3.0
 - MS SQL Server
-- EventStore**
+- EventStore
 
 **Dzia³anie aplikacji**
 1. PictureScan.Producer wrzuca informacje o przeskanowanych zdjêciach na kolejkê ES - móg³bym wrzucaæ te informacje prosto do bazy,
@@ -13,7 +13,7 @@ ale wykorzystujê do tego celu najpierw ES w ramach praktyki z tym narzêdziem. Mo
 przeskanowania wszystkich zdjêæ
 2. PictureScan.Consumer odczytuje event po evencie z ES i wrzuca odczytane eventy do bazy danych
 
-###Uruchmienie aplikacji:###
+### U ruchmienie aplikacji:
 1. pobraæ repozytorium.
 2. stworzyæ bazê danych MS SQL Server
  - skonfigurowaæ appsettings.json w PictureScan.DBMigrator
