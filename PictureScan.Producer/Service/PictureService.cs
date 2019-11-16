@@ -5,7 +5,6 @@ using System;
 using System.Text;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace PictureScan.Producer.Service
 {
@@ -16,8 +15,8 @@ namespace PictureScan.Producer.Service
     }
     public class PictureService : IPictureService
     {
-        IAppConfiguration _config;
-        IBitmapService _bitmapService;
+        readonly IAppConfiguration _config;
+        readonly IBitmapService _bitmapService;
         IEventStoreConnection _connectionES;
         int countSendedPictureInfo = 0;
         DateTime startService = new DateTime();
@@ -28,7 +27,7 @@ namespace PictureScan.Producer.Service
             _bitmapService = bitmapservice;
         }
 
-        public async void Start()
+        public void Start()
         {
             Console.WriteLine("Service Start");
             CreateESConnection();

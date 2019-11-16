@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictureScan.Models", "Pictu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictureScan.DBMigrator", "PictureScan.DBMigrator\PictureScan.DBMigrator.csproj", "{490CC31C-49EB-44BA-886F-56CC286F2A94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureScan.ESInit", "PictureScan.ESInit\PictureScan.ESInit.csproj", "{5FABCC16-C4CA-4457-B9A8-913C4A1A9C8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictureScan.ESInit", "PictureScan.ESInit\PictureScan.ESInit.csproj", "{5FABCC16-C4CA-4457-B9A8-913C4A1A9C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureScan.Consumer", "PictureScan.Consumer\PictureScan.Consumer.csproj", "{1D696034-22E8-4FB0-ABD9-A72DB55B782C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5FABCC16-C4CA-4457-B9A8-913C4A1A9C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FABCC16-C4CA-4457-B9A8-913C4A1A9C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FABCC16-C4CA-4457-B9A8-913C4A1A9C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D696034-22E8-4FB0-ABD9-A72DB55B782C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D696034-22E8-4FB0-ABD9-A72DB55B782C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D696034-22E8-4FB0-ABD9-A72DB55B782C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D696034-22E8-4FB0-ABD9-A72DB55B782C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

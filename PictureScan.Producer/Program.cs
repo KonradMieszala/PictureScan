@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Drawing.Imaging;
 using Unity;
 using PictureScan.Producer.Configurations;
 using PictureScan.Producer.Service;
@@ -12,7 +9,7 @@ namespace PictureScan.Producer
     class Program
     {
         private static ManualResetEvent _exit;
-        static void Main(string[] args)
+        static void Main()
         {
             using (var container = new UnityContainer())
             {

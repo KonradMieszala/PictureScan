@@ -21,7 +21,7 @@ namespace PictureScan.Service.Services
         public PictureInfo GetPicture(string pathToFile)
         {
             Bitmap bm = new System.Drawing.Bitmap(pathToFile);
-            return new PictureInfo()
+            var result = new PictureInfo()
             {
                 FileName = Path.GetFileName(pathToFile),
                 Path = Path.GetDirectoryName(pathToFile),
@@ -35,6 +35,8 @@ namespace PictureScan.Service.Services
                 RightBottom = GetNumberFromPixels(bm, bm.Width - 1, bm.Height - 1),
                 RightCenter = GetNumberFromPixels(bm, bm.Width - 1, bm.Height / 2),
             };
+            bm.Dispose();
+            return result;
         }
     }
 }

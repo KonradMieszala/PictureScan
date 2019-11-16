@@ -4,13 +4,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace PictureScan.Producer.Configurations
+namespace PictureScan.Consumer.Configurations
 {
     public interface IAppConfiguration
     {
+        string DBConnection { get; }
         string ESConnection { get; }
-        string DirectoryLocation { get; }
-
     }
     public class AppConfiguration : IAppConfiguration
     {
@@ -25,8 +24,8 @@ namespace PictureScan.Producer.Configurations
             _config = builder.Build();
         }
 
-        public string ESConnection => _config.GetConnectionString("ESConnection");
+        public string DBConnection => _config.GetConnectionString("DBConnection");
 
-        public string DirectoryLocation => _config.GetSection("DirectoryLocation").Value;
+        public string ESConnection => _config.GetConnectionString("ESConnection");
     }
 }

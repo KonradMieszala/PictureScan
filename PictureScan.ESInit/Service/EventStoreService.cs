@@ -12,8 +12,8 @@ namespace PictureScan.ESInit.Service
     }
     public class EventStoreService : IEventStoreService
     {
-        string streamName = "picture_stream";
-        IAppConfiguration _config;
+        readonly string streamName = "picture_stream";
+        readonly IAppConfiguration _config;
         IEventStoreConnection _connectionES;
         public EventStoreService(IAppConfiguration config)
         {

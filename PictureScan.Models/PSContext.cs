@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PictureScan.Models.DBModels;
 
 namespace PictureScan.Models
 {
@@ -8,6 +9,7 @@ namespace PictureScan.Models
         private readonly string _connectionString;
 
         public DbSet<Picture> Picture { get; set; }
+        public DbSet<Directory> Directory { get; set; }
         public PSContext(string connectionString, int? timeout = null) : base()
         {
             _connectionString = connectionString;
