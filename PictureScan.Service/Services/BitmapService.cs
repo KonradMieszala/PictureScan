@@ -1,26 +1,30 @@
 ﻿using PictureScan.Models;
+using PictureScan.Models.ComonModels;
 using System;
 using System.Drawing;
+using System.IO;
 
 namespace PictureScan.Service.Services
 {
     public interface IBitmapService
     {
-        long GetNumberFromPixels(Bitmap bm, int x, int y);
-        Picture GetPicture(Bitmap bm);
+        PictureInfo GetPicture(string pathToFile);
     }
     public class BitmapService : IBitmapService
     {
-        public long GetNumberFromPixels(Bitmap bm, int x, int y)
+        private long GetNumberFromPixels(Bitmap bm, int x, int y)
         {
             var tmp = bm.GetPixel(x, y);
             return Convert.ToInt64(tmp.R + "" + tmp.G + "" + tmp.B);
         }
 
-        public Picture GetPicture(Bitmap bm)
+        public PictureInfo GetPicture(string pathToFile)
         {
-            return new Picture()
+            Bitmap bm = new System.Drawing.Bitmap(pathToFile);
+            return new PictureInfo()
             {
+                FileName = Path.GetFileName(pathToFile),
+                Path = Path.GetDirectoryName(pathToFile),
                 LeftTop = GetNumberFromPixels(bm, 0, 0),
                 LeftBottom = GetNumberFromPixels(bm, 0, bm.Height - 1),
                 LeftCenter = GetNumberFromPixels(bm, 0, bm.Height / 2),
